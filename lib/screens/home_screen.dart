@@ -6,6 +6,8 @@ import 'package:flutterdocs/screens/examples/2-list/3-Create_a_grid_list.dart';
 import 'package:flutterdocs/screens/examples/2-list/4-Create_lists_with_different_types_of_items.dart';
 import 'package:flutterdocs/screens/examples/2-list/5-List_with_spaced_items.dart';
 import 'package:flutterdocs/screens/examples/2-list/6-Work_with_long_lists.dart';
+import 'package:flutterdocs/screens/examples/3-scrolling/1-Place_a_floating_app_bar_above_a_list.dart';
+import 'package:flutterdocs/screens/examples/3-scrolling/2-Create_a_scrolling_parallax_effect.dart';
 
 void main() => runApp(const HomeScreen());
 
@@ -52,14 +54,10 @@ final catalog = [
           CatalogNode(
             title: 'Scrolling',
             children: [
-              CatalogNode(title: 'Slivers', screen: const Placeholder()),
+              CatalogNode(title: 'Place a floating app bar above a list', screen: const Placeafloatingappbarabovealist()),
               CatalogNode(
-                title: 'Floating AppBar',
-                screen: const Placeholder(),
-              ),
-              CatalogNode(
-                title: 'Parallax effect',
-                screen: const Placeholder(),
+                title: 'Create a scrolling parallax effect',
+                screen: const ScrollingParallaxEffect(),
               ),
             ],
           ),
